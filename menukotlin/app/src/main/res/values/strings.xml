@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">menu-kotlin</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_java">Java</string>
+    <string name="action_kotlin">Kotlin</string>
+    <string name="action_python">Python</string>
+</resources>
