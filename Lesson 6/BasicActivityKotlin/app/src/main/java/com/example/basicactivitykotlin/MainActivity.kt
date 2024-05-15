@@ -40,13 +40,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, "Молодец!", Toast.LENGTH_LONG).show()
         }
 
-
         binding.fab.setOnClickListener { view ->
-            snackbar = Snackbar.make(view, "Пора изучать Java!", Toast.LENGTH_SHORT)
-            SnackbarHelper.configSnackbar(this@MainActivity, snackbar)
-            snackbar.show()
-
-            /*snackbar = Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            snackbar = Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Да", snackBarOnClickListener)
                 .setActionTextColor(Color.MAGENTA)
                 //.setAnchorView(R.id.fab)
@@ -65,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             snackbar.view.setBackgroundColor(Color.RED)
             snackbar.view.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
                 .setTextColor(Color.MAGENTA)
-            snackbar.show()*/
+            snackbar.show()
         }
     }
 

@@ -24,10 +24,6 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private Snackbar snackbar;
 
-    public void snackBarOnClickListener(View view) {
-        Toast.makeText(getApplicationContext(), "Молодец!", Toast.LENGTH_LONG).show();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         binding.fab.setOnClickListener(view -> {
-            snackbar = Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG);
-            snackbar.setAnchorView(R.id.fab);
-            snackbar.setAction("Action", null);
+            snackbar = Snackbar.make(view, "Пора изучать Java!", Toast.LENGTH_SHORT);
+
+            SnackbarHelper.configSnackbar(this, snackbar);
             snackbar.show();
         });
     }
